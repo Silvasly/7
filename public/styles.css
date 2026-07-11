@@ -1,0 +1,107 @@
+:root {
+  color-scheme: light;
+  --bg: #f5f7ff;
+  --card: #ffffff;
+  --text: #14213d;
+  --accent: #2563eb;
+  --accent-soft: #dbeafe;
+  --border: #dbe3f0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+.hero {
+  background: linear-gradient(135deg, #0f172a, #2563eb);
+  color: white;
+  padding: 4rem 1.5rem;
+}
+
+.hero__content {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  font-size: 0.8rem;
+  opacity: 0.8;
+}
+
+.button {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.8rem 1.2rem;
+  border-radius: 999px;
+  background: white;
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.button.secondary {
+  background: var(--accent);
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+main {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem 4rem;
+}
+
+.intro,
+.section,
+.quiz-box {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  padding: 1.25rem;
+  margin-bottom: 1.25rem;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.05);
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+}
+
+.card {
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 1rem;
+  background: linear-gradient(135deg, var(--accent-soft), #eff6ff);
+}
+
+.card h3 {
+  margin-top: 0;
+}
+
+.timeline {
+  display: grid;
+  gap: 1rem;
+}
+
+.timeline article {
+  background: #f8fbff;
+  border-left: 4px solid var(--accent);
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.hidden {
+  display: none;
+}

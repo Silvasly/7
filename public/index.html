@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Azure AZ-204 Learning Hub</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <div class="hero__content">
+        <p class="eyebrow">Azure-first learning app</p>
+        <h1>AZ-204 learning built around real Azure capabilities</h1>
+        <p>
+          This experience is designed around Azure services end to end, so beginners can learn how an Azure solution is structured rather than just reading isolated concepts.
+        </p>
+        <a class="button" href="#azure-features">Explore Azure features</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="intro">
+        <h2>What this app covers</h2>
+        <p>
+          You will see how Azure App Service, Functions, Storage, Cosmos DB, Key Vault, Service Bus, Monitor, and AI Services work together in a modern cloud solution.
+        </p>
+      </section>
+
+      <section id="azure-features" class="section">
+        <div class="section__heading">
+          <h2>Azure features in this app</h2>
+          <p>These are the core Azure capabilities highlighted for AZ-204 learners.</p>
+        </div>
+        <div id="feature-grid" class="card-grid"></div>
+      </section>
+
+      <section class="section">
+        <div class="section__heading">
+          <h2>Azure solution flow</h2>
+          <p>Follow the flow of a typical Azure-based application.</p>
+        </div>
+        <div id="architecture-list" class="timeline"></div>
+      </section>
+
+      <section class="section quiz-box">
+        <h2>Quick Azure knowledge check</h2>
+        <p>Which Azure service helps protect secrets and certificates?</p>
+        <button class="button secondary" id="quiz-btn">Reveal answer</button>
+        <p id="quiz-answer" class="hidden">Answer: Azure Key Vault.</p>
+      </section>
+    </main>
+
+    <script src="/app.js"></script>
+  </body>
+</html>
